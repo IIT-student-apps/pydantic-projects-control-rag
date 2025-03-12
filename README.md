@@ -10,6 +10,8 @@
 
 - Установленный Python (рекомендуемая версия: 3.x)
 - Установленный pip (обычно устанавливается вместе с Python)
+- Ollama
+  
 
 ### Общие шаги
 
@@ -37,7 +39,7 @@
     ```
 
     
-    2.3 **Для MacOS**:
+    2.3 **Для macOS**:
   
     ```bash
     python3 -m venv venv
@@ -48,8 +50,23 @@
     ```bash
     pip install -r requirements.txt
    ```
+3. **Установка Ollama**:
 
-3. **Запуск приложения**:
+
+   3.1 **Для macOS**:
+      
+      [Download](https://ollama.com/download/Ollama-darwin.zip)
+      
+   3.2 **Для Windows**:
+      
+      [Download](https://ollama.com/download/OllamaSetup.exe)
+      
+   3.3 **Для Linux**:
+      
+      ```shell
+      curl -fsSL https://ollama.com/install.sh | sh
+      ```
+5. **Запуск приложения**:
    ```bash
    cd app
    uvicorn main:app --reload   
