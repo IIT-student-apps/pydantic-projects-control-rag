@@ -16,7 +16,7 @@
 1. **Клонируйте репозиторий**:
 
    ```bash
-   git clone https://github.com/ваш-репозиторий.git
+   git clone https://github.com/IIT-student-apps/pydantic-projects-control-rag.git
    cd ваш-репозиторий
 
 2. **Создание виртуального окружения и установка зависимостей**:
