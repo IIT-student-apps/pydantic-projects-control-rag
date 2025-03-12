@@ -6,17 +6,14 @@ from fastapi.responses import ORJSONResponse
 from config import settings
 from fastapi.middleware.cors import CORSMiddleware
 from routes.test import router as doc_rout
+from start_app import start_app
 
 origins = [
     # "http://localhost:8000",
     # "http://127.0.0.1:8000",
     #  front ports
 ]
-
-app = FastAPI(
-    default_response_class=ORJSONResponse,
-)
-
+app = start_app(create_custom_static_urls=True)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
